@@ -1,0 +1,71 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+	"source": "arch",
+        "padding": {
+            "top": 2,
+            "left": 3
+        }
+    },
+    "modules": [
+        "break",
+	 "break",
+        {
+            "type": "host",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        {
+            "type": "cpu",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        {
+            "type": "memory",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        {
+            "type": "disk",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        "break",
+	 "break",
+	"break",
+	"break",
+	{
+	    "type": "os",
+            "key": "  ",
+	    "keyColor": "\u001b[38;2;23;147;209m",
+            "format": "{name} {version}"
+    	},
+        {
+            "type": "wm",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        {
+            "type": "terminal",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m"
+        },
+        	"break",
+		 "break",
+	"break",
+	"break",
+	{
+            "type": "command",
+            "key": "  ",
+            "keyColor": "\u001b[38;2;23;147;209m",
+	    "text": "whoami"
+        },
+		"break",
+	"break",
+	"break",
+	"break"
+
+    ]
+}
+

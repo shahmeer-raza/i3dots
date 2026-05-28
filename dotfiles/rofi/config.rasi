@@ -1,0 +1,12 @@
+configuration {
+    modi: "drun,run,window,ssh";
+    terminal: "gnome-terminal";
+    show-icons: true;
+}
+* {
+  font: "Font Awesome 6 Free Solid 12, Font Awesome 6 Brands Regular 12, Font Awesome 6 Free Regular 12, Ubuntu 12";
+}
+
+
+@theme "~/.config/rofi/theme.rasi"
+
