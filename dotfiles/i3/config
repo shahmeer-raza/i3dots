@@ -1,3 +1,5 @@
+#this is just for testing
+
 #:%s/\<brave\>/brave/g
 # It will not be overwritten, so edit it as you like.
 #
