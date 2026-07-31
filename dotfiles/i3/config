@@ -8,7 +8,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 floating_modifier $mod
 
 #terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec ghostty
 
 #kill program
 bindsym $mod+BackSpace kill
@@ -114,7 +114,7 @@ bindsym $mod+space exec rofi -show drun
 
 bindsym $mod+l exec --no-startup-id bash -c "i3-msg workspace  && sleep 0.3 && betterlockscreen -l blur"
 
-exec_always --no-startup-id feh --bg-scale ~/wallpapers/5.webp
+exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/wallpaper.jpg
 
 exec_always --no-startup-id killall -q polybar; polybar mybar &
 
@@ -191,14 +191,14 @@ bindsym $mod+ctrl+w exec --no-startup-id ~/.config/polybar/scripts/wifi-rofi.sh
 
 #for_window [class=".*"] border pixel 1
 
-assign [class="Alacritty"] $ws5
-for_window [class="Alacritty"] focus
+assign [class="ghostty"] $ws5
+for_window [class="ghostty"] focus
 
 assign [class="mpv"] $ws1
 for_window [class="mpv"] focus
 
-assign [class="Code"] $ws8
-for_window [class="Code"] focus
+assign [class="code"] $ws8
+for_window [class="code"] focus
 
 assign [class="Brave-browser" instance="www.youtube.com"] $ws4
 for_window [class="Brave-browser" instance="www.youtube.com"] focus
@@ -233,4 +233,5 @@ for_window [class="Brave-browser"] focus
 
 exec_always --no-startup-id i3-msg "workspace $ws5"
 
-
+for_window [window_role="GtkFileChooserDialog"] floating enable
+for_window [window_role="GtkFileChooserDialog"] move position center
