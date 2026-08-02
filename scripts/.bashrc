@@ -12,7 +12,6 @@ alias grep='grep --color=auto'
 alias i3='startx'
 alias update='sudo pacman -Syu'
 alias gnome='sudo systemctl start gdm'
-alias fastfetch='clear && fastfetch'
 alias ff='clear && fastfetch'
 PS1='\n      \[\e[38;5;39m\][ \w ]~ \[\e[0m '
 export PATH="$HOME/.local/bin:$PATH"
