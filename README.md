@@ -12,7 +12,7 @@ My personal dotfiles and configuration for i3 window manager on Arch Linux.
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/i3dots.git
+git clone https://github.com/shahmeer-raza/i3dots.git
 cd i3dots
 # copy configs to appropriate locations
 ```
