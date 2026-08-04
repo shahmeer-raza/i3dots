@@ -5,14 +5,14 @@ My personal dotfiles and configuration for i3 window manager on Arch Linux.
 ## Contents
 
 - **dotfiles/** — Config files for i3 and related tools
-- **ffconfigs/** — Fastfetch configs (linked from [another repo](#), not my own work)
+- **ffconfigs/** — Fastfetch configs, sourced from [this discussion](https://github.com/fastfetch-cli/fastfetch/discussions/971) (not my own work)
 - **scripts/** — Utility scripts
 - **mirrorlist** — Pacman mirrorlist
 
 ## Setup
 
 ```bash
-git clone https://github.com/shahmeer-raza/i3dots.git
+git clone https://github.com/yourusername/i3dots.git
 cd i3dots
 # copy configs to appropriate locations
 ```
