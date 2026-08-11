@@ -1,4 +1,8 @@
 window-decoration = false
-theme = Night Owl
 font-family = "Ubuntu Mono"
 font-size = 12
+palette = 3=#ffaa00
+theme = Adventure
+cursor-color = #ffaa00
+foreground = #909090
+
