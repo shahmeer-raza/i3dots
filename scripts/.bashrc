@@ -14,6 +14,6 @@ alias update='paru -Syu'
 alias gnome='sudo systemctl start gdm'
 alias fastfetch='echo && fastfetch'
 alias ff='clear && fastfetch'
-alias cls='clear'
-PS1='\n      \[\e[38;5;39m\][ \w ]~ \[\e[0m '
+alias cls='clear && cd'
+PS1='\n\033[33m$(if [ "$PWD" = "$HOME" ]; then echo "   > "; else echo "   $(echo $PWD | sed "s|$HOME|~|")/ > "; fi)\033[0m '
 export PATH="$HOME/.local/bin:$PATH"
