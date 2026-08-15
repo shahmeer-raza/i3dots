@@ -1,0 +1,14 @@
+format = """
+$directory
+   $character
+"""
+
+[directory]
+style = "bold yellow"
+format = "[${path}](bold yellow)"
+truncation_length = 3
+home_symbol = "~"
+
+[character]
+success_symbol = "[▶](bold yellow)"
+error_symbol = "[▶](bold yellow)"
