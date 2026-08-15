@@ -10,11 +10,12 @@ cd
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias i3='startx'
-alias update='paru -Syu'
+alias update='paru -Syyu'
 alias gnome='sudo systemctl start gdm'
 alias fastfetch='echo && fastfetch'
 alias ff='clear && fastfetch'
 alias cls='clear && cd'
 eval "$(zoxide init bash)"
-PS1='\n\033[33m$(if [ "$PWD" = "$HOME" ]; then echo "   > "; else echo "   $(echo $PWD | sed "s|$HOME|~|")/ > "; fi)\033[0m '
+eval "$(starship init bash)"
+
 export PATH="$HOME/.local/bin:$PATH"
