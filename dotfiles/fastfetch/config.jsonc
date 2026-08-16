@@ -41,11 +41,9 @@
     "separator": " ~> "
   },
   "modules": [
-    "break",
-    "break",
-    "break",
-    "break",
+	
     {
+      "format": "break",
       "type": "title",
       "format": "{6}{7}{#yellow}{8}{#}"
     },
