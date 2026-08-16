@@ -5,4 +5,6 @@ palette = 3=#ffaa00
 theme = Adventure
 cursor-color = #ffaa00
 foreground = #909090
-
+keybind = alt+k=next_tab
+keybind = alt+j=previous_tab
+keybind = alt+backspace=close_tab
