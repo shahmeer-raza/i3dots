@@ -1,3 +1,5 @@
-vim.cmd.colorscheme "custom"
-vim.opt.number = true
-vim.opt.clipboard = "unnamedplus"
+require('config.options')
+require('config.keybinds')
+require('config.lazy')
+require('config.theme')
+
