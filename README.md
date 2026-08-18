@@ -67,11 +67,6 @@ Make polybar scripts executable:
 chmod +x ~/.config/polybar/scripts/*.sh
 ```
 
-Restart i3 to apply changes:
-
-```bash
-$mod + Shift + R
-```
 
 ---
 
@@ -86,6 +81,8 @@ File Manager: `Super + N`
 Browser: `Super + B`
 
 Lock Screen: `Super + L`
+
+Refresh i3: `Super + Shift + r`
 
 Volume Up: `F10`
 
@@ -102,7 +99,7 @@ See full config at `dotfiles/i3/config`
 ## System Info
 
 - OS: Arch Linux
-- Window Manager: i3-gaps
+- Window Manager: i3-wm
 - Status Bar: Polybar
 - Terminal: Ghostty
 - Compositor: Picom
