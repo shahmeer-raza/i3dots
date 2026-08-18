@@ -35,10 +35,11 @@ Run `:Mason` to install LSP servers:
 
 | Key | Action |
 |-----|--------|
-| `<leader>e` | Show error message |
+| `Space e` | Show error message |
 | `<C-Space>` | Autocomplete |
-| `<leader>ff` | Find files (telescope) |
-| `<leader>fg` | Live grep (telescope) |
+| `Space ff` | Find files (telescope) |
+| `Space fg` | Live grep (telescope) |
+| `Space cd` | Exit to file directory |
 
 ## Plugins
 
