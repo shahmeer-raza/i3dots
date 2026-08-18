@@ -69,6 +69,11 @@ sudo pacman -S brightnessctl
 sudo pacman -S wireplumber
 ```
 
+### Clipboard (xclip) 
+```bash
+sudo pacman -S xclip 
+```
+
 ### Screenshot Tool (Scrot)
 ```bash
 sudo pacman -S scrot
