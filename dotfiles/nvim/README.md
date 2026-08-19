@@ -39,6 +39,7 @@ Run `:Mason` to install LSP servers:
 | `<C-Space>` | Autocomplete |
 | `Space ff` | Find files (telescope) |
 | `Space fg` | Live grep (telescope) |
+| `Space fm` | Format document |
 | `Space cd` | Exit to file directory |
 
 ## Plugins
@@ -49,6 +50,8 @@ Run `:Mason` to install LSP servers:
 - **nvim-treesitter** - Syntax highlighting
 - **mason** - LSP installer
 - **lazy.nvim** - Plugin manager
+- **dracula** - Color scheme
+- **lualine** - Statusline
 
 ## Structure
 
@@ -60,11 +63,12 @@ Run `:Mason` to install LSP servers:
     ├── config/
     │   ├── keybinds.lua
     │   ├── lazy.lua
-    │   ├── options.lua
-    │   └── theme.lua
+    │   └── options.lua
     └── plugins/
         ├── cmp.lua
+        ├── dracula.lua
         ├── lsp.lua
+        ├── lualine.lua
         ├── mason.lua
         ├── telescope.lua
         └── treesitter.lua
