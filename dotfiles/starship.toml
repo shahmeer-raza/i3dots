@@ -6,7 +6,7 @@ $directory
 [directory]
 style = "bold yellow"
 format = "[${path}](bold yellow)"
-truncation_length = 3
+truncation_length = 0 
 home_symbol = "~"
 
 [character]
