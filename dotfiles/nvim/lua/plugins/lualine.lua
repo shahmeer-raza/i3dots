@@ -5,7 +5,7 @@ return {
     config = function()
       require("lualine").setup({
         options = {
-          theme = "dracula-nvim",
+          theme = "auto",
         },
         sections = {
           lualine_c = {
