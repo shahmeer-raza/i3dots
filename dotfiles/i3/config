@@ -9,7 +9,6 @@ floating_modifier $mod
 
 #terminal
 bindsym $mod+Return exec ghostty
-
 #kill program
 bindsym $mod+BackSpace kill
 
@@ -57,9 +56,9 @@ bindsym $mod+Shift+space floating toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 ""
+set $ws1 ""
 set $ws2 ""
-set $ws3 ""
+set $ws3 ""
 set $ws4 ""
 set $ws5 ""
 set $ws6 ""
@@ -108,7 +107,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+ctrl+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-gaps inner 13
+gaps inner 3 
 
 bindsym $mod+space exec rofi -show drun
 
@@ -135,9 +134,10 @@ bindsym F7 exec --no-startup-id brightnessctl set +10%
 # Decrease brightness
 bindsym F6 exec --no-startup-id brightnessctl set 10%-
 
+bindsym $mod+m exec firefox
 bindsym $mod+b exec brave
 
-bindsym $mod+n exec thunar
+bindsym $mod+n exec nautilus 
 
 # Go to the workspace on the right
 bindsym $mod+f workspace next
@@ -174,7 +174,7 @@ bindsym $mod+z exec --no-startup-id brave -app=https://chess.com/play
 
 bindsym $mod+p exec scrot
 
-bindsym $mod+m exec mpv
+#bindsym $mod+m exec mpv
 
 bindsym $mod+v exec code
 
@@ -194,8 +194,8 @@ bindsym $mod+ctrl+w exec --no-startup-id ~/.config/polybar/scripts/wifi-rofi.sh
 assign [class="ghostty"] $ws5
 for_window [class="ghostty"] focus
 
-assign [class="mpv"] $ws1
-for_window [class="mpv"] focus
+assign [class="firefox"] $ws1
+for_window [class="firefox"] focus
 
 assign [class="code"] $ws8
 for_window [class="code"] focus
@@ -218,8 +218,8 @@ for_window [class="Brave-browser" instance="instagram.com__reels"] focus
 assign [class="Brave-browser" instance="chess.com__play"] $ws11
 for_window [class="Brave-browser" instance="chess.com__play"] focus
 
-assign [class="Thunar"] $ws6
-for_window [class="Thunar"] focus
+assign [class="Nautilus"] $ws6
+for_window [class="Nautilus"] focus
 
 assign [class="Brave-browser" instance="monkeytype.com"] $ws7
 for_window [class="Brave-browser" instance="monkeytype.com"] focus
