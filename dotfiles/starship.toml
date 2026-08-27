@@ -2,13 +2,11 @@ format = """
 $directory
    $character
 """
-
 [directory]
-style = "bold yellow"
-format = "[${path}](bold yellow)"
+style = "bold blue"
+format = "[${path}](bold blue)"
 truncation_length = 0 
 home_symbol = "~"
-
 [character]
-success_symbol = "[▶](bold yellow)"
-error_symbol = "[▶](bold yellow)"
+success_symbol = "[▶](bold cyan)"
+error_symbol = "[▶](bold red)"
