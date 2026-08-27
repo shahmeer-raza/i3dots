@@ -9,4 +9,4 @@ truncation_length = 0
 home_symbol = "~"
 [character]
 success_symbol = "[▶](bold cyan)"
-error_symbol = "[▶](bold red)"
+error_symbol = "[▶](bold cyan)"
