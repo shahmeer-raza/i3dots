@@ -58,7 +58,6 @@ bindsym $mod+Shift+space floating toggle
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 ""
 set $ws2 ""
-set $ws3 ""
 set $ws4 ""
 set $ws5 ""
 set $ws6 ""
@@ -68,8 +67,8 @@ set $ws9 ""
 set $ws10 ""
 set $ws11 ""
 set $ws12 ""
-set $ws13 ""
-set $ws14 ":
+set $ws3 ""
+set $ws14 ""
 
 # alternative for workspace switching
 bindsym Mod1+Return workspace $ws5

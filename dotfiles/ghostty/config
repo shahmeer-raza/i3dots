@@ -3,7 +3,7 @@ font-family = "Ubuntu Mono"
 font-size = 12
 palette = 3=#ffaa00
 theme = Adventure
-cursor-color = #ffaa00
+cursor-color = #4A7BA7
 foreground = #909090
 keybind = alt+k=next_tab
 keybind = alt+j=previous_tab
