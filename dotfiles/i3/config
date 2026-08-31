@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:Ubuntu 12
+font pango:JetBrains Mono 12
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id export GTK_THEME=Adwaita-dark
 exec --no-startup-id nm-applet

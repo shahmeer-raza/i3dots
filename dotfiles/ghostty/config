@@ -1,9 +1,10 @@
 window-decoration = false
-font-family = "Ubuntu Mono"
+font-family = JetBrains Mono
 font-size = 12
 palette = 3=#ffaa00
-theme = Adventure
+theme = Gruvbox Material
 cursor-color = #4A7BA7
+background = #000000
 foreground = #909090
 keybind = alt+k=next_tab
 keybind = alt+j=previous_tab
