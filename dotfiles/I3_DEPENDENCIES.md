@@ -6,124 +6,89 @@
 
 ## Core i3 & Window Manager
 
-### i3 Window Manager
-sudo pacman -S i3-gaps
-
-### i3 Status Bar Alternative (Polybar)
-sudo pacman -S polybar
+```bash
+sudo pacman -S i3-gaps polybar
+```
 
 ---
 
 ## Terminal & Shell
 
-### Ghostty Terminal
+```bash
 paru -S ghostty
+sudo pacman -S starship
+```
 
 ---
 
 ## System Utilities
 
-### Network Manager Applet
-sudo pacman -S network-manager-applet
-
-### File Manager (Thunar)
-sudo pacman -S thunar
-
-### Rofi (Application Launcher)
-sudo pacman -S rofi
-
-### Wallpaper Manager (Feh)
-sudo pacman -S feh
-
-### Compositor (Picom)
-sudo pacman -S picom
-
-### Better Lockscreen
+```bash
+sudo pacman -S network-manager-applet thunar rofi feh picom brightnessctl wireplumber scrot dbus dex xclip
 paru -S betterlockscreen
-
-### Brightness Control (brightnessctl)
-sudo pacman -S brightnessctl
-
-### Volume Control (wireplumber)
-sudo pacman -S wireplumber
-
-### Clipboard (xclip) 
-sudo pacman -S xclip 
-
-### Screenshot Tool (Scrot)
-sudo pacman -S scrot
-
-### D-Bus (System Message Bus)
-sudo pacman -S dbus
-
-### Desktop Entry Execution (dex)
-sudo pacman -S dex
+```
 
 ---
 
 ## Command Line Tools & Shell Utilities
 
 ### Eza (Modern Replacement for ls)
+```bash
 sudo pacman -S eza
+```
 
 ### Fzf (Fuzzy Finder)
+```bash
 sudo pacman -S fzf
+```
 
 ### Ripgrep (Fast Text Search)
+```bash
 sudo pacman -S ripgrep
+```
 
 ### Zoxide (Smart Directory Navigation)
+```bash
 sudo pacman -S zoxide
+```
 
 ### Tree (Directory Tree Viewer)
+```bash
 sudo pacman -S tree
+```
 
 ---
 
-## Browsers & Web Tools
+## Browsers & Development
 
-### Brave Browser
-paru -S brave-browser
-
----
-
-## Development & Text Editors
-
-### Visual Studio Code
-paru -S visual-studio-code-bin
+```bash
+paru -S brave-browser visual-studio-code-bin
+```
 
 ---
 
-## Media & Entertainment
+## Media & Utilities
 
-### MPV (Media Player)
-sudo pacman -S mpv
-
----
-
-## Shell & Prompt
-
-### Starship (Modern Shell Prompt)
-sudo pacman -S starship
+```bash
+sudo pacman -S mpv fastfetch
+```
 
 ---
 
 ## Fonts
 
-### JetBrains Font (Used in i3 config)
-sudo pacman -S ttf-jetbrains-mono
-
-### Font Awesome 6 (For Icons in Polybar)
-sudo pacman -S otf-font-awesome
+```bash
+sudo pacman -S ttf-jetbrains-mono otf-font-awesome
+```
 
 ---
 
-## All-in-One Installation
+## Quick Install Script
 
-Copy and run this script to install everything at once:
+Save as `install_deps.sh` and run:
 
+```bash
 #!/bin/bash
-
 echo "Installing i3 dependencies..."
 
 # Core
@@ -131,33 +96,26 @@ sudo pacman -S i3-gaps polybar
 
 # Terminal
 paru -S ghostty
+sudo pacman -S starship
 
 # System Utils
 sudo pacman -S network-manager-applet thunar rofi feh picom brightnessctl wireplumber scrot dbus dex xclip
-
-# CLI Tools
-sudo pacman -S eza fzf ripgrep zoxide tree
-
-# Better Lockscreen
 paru -S betterlockscreen
 
-# Browsers
-paru -S brave-browser
+# Browsers & Dev
+paru -S brave-browser visual-studio-code-bin
 
-# Development
-paru -S visual-studio-code-bin
-
-# Media
-sudo pacman -S mpv
-
-# Shell & Prompt
-sudo pacman -S starship
+# Media & Utils
+sudo pacman -S mpv fastfetch
 
 # Fonts
 sudo pacman -S ttf-jetbrains-mono otf-font-awesome
 
 echo "✅ All dependencies installed!"
+```
 
-Save as install_deps.sh, make executable, and run:
+Run it:
+```bash
 chmod +x install_deps.sh
 ./install_deps.sh
+```
