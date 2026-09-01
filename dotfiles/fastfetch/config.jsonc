@@ -1,8 +1,8 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "auto",
-    "source": "auto",
+    "type": "file",
+    "source": "/home/shahmeer/i3dots/dotfiles/fastfetch/ascii_art.txt",
     "color": {
       "1": "38;2;228;154;107",
       "2": "38;2;240;184;119",
@@ -60,7 +60,6 @@
     },
     "shell",
     "break",
-    "uptime",
     {
       "type": "cpu",
       "showPeCoreCount": true,
@@ -75,19 +74,9 @@
       "type": "memory",
       "key": "RAM"
     },
-    "break",
     {
       "type": "disk"
     },
-    "break",
-    {
-      "type": "media",
-      "format": "{5}: <{#underline_1}{1}{#}> {?3}by {#1}{3}{#}{?}"
-    },
-    {
-      "type": "sound"
-    },
-    "break",
-    "colors"
+    "break"
   ]
 }
