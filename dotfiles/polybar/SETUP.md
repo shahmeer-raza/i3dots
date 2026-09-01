@@ -34,19 +34,14 @@ sudo pacman -S wireplumber
 
 ## Required Fonts
 
-### Font Awesome (Icons)
+### Font Awesome 6 (Icons)
 ```bash
-sudo pacman -S ttf-font-awesome
+sudo pacman -S otf-font-awesome
 ```
 
-### JetBrains Mono Nerd Font
+### JetBrains Mono
 ```bash
-paru -S ttf-jetbrains-mono-nerd
-```
-
-### Ubuntu Font (Already installed for i3)
-```bash
-sudo pacman -S ttf-ubuntu-font-family
+sudo pacman -S ttf-jetbrains-mono
 ```
 
 ---

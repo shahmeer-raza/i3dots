@@ -134,14 +134,14 @@ sudo pacman -S zoxide
 
 ## Fonts
 
-### Ubuntu Font (Used in i3 config)
+### JetBrains Font (Used in i3 config)
 ```bash
-sudo pacman -S ttf-ubuntu-font-family
+sudo pacman -S ttf-jetbrains-mono
 ```
 
-### Nerd Fonts (For Icons in Polybar)
+### Font Awesome 6 (For Icons in Polybar)
 ```bash
-paru -S nerd-fonts-ubuntu-mono
+sudo pacman -S otf-font-awesome
 ```
 
 ---
@@ -180,8 +180,7 @@ sudo pacman -S mpv
 sudo pacman -S starship
 
 # Fonts
-sudo pacman -S ttf-ubuntu-font-family
-paru -S nerd-fonts-ubuntu-mono
+sudo pacman -S ttf-jetbrains-mono otf-font-awesome
 
 echo "✅ All dependencies installed!"
 ```
