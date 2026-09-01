@@ -103,7 +103,7 @@ See full config at `dotfiles/i3/config`
 - Status Bar: Polybar
 - Terminal: Ghostty
 - Compositor: Picom
-- Font: Ubuntu
+- Font: JetBrains Mono
 
 ---
 
