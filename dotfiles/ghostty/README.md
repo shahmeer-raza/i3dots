@@ -1,13 +1,14 @@
 # Ghostty Terminal Configuration
 
-Terminal emulator setup with custom keybindings, integrated with Starship prompt and Zoxide.
+Terminal emulator setup with custom keybindings, integrated with Starship prompt, Eza, Zoxide, Fzf, Ripgrep, and Tree.
 
 ## Features
 
-- **Custom keybindings**: Vim-style navigation
-- **Starship integration**: Modern prompt display
-- **Zoxide support**: Smart directory jumping
-- **Fastfetch display**: System info on new tab
+- Custom keybindings: Vim-style navigation
+- Starship integration: Modern prompt display
+- Zoxide support: Smart directory jumping
+- CLI Tools: Colorized listing (eza), interactive fuzzy search (fzf), fast search (ripgrep), and directory structure viewing (tree)
+- Fastfetch display: System info on new tab
 
 ## Keybindings
 
@@ -20,36 +21,35 @@ Terminal emulator setup with custom keybindings, integrated with Starship prompt
 
 ## Configuration Files
 
-- `config.jsonc` - Ghostty terminal config
-- `fastfetch.jsonc` - System info display
-- `_bashrc` - Shell configuration with aliases
+- config.jsonc - Ghostty terminal config
+- fastfetch.jsonc - System info display
+- _bashrc - Shell configuration with aliases
 
 ## Setup
 
 ### Ghostty Config
 
-```bash
 cp config.jsonc ~/.config/ghostty/config
-```
 
 ### Bash Config
 
-```bash
 cp _bashrc ~/.bashrc
 source ~/.bashrc
-```
 
 ### Dependencies
 
 - ghostty
 - starship
 - zoxide
+- eza
+- fzf
+- ripgrep
+- tree
 - fastfetch
 - paru
 
 ## Usage
 
-```bash
 # Open new tab
 Ctrl+Shift+T
 
@@ -65,11 +65,13 @@ update      # paru -Syyu
 ff          # fastfetch display
 i3          # start i3
 gnome       # start GNOME
-```
 
 ## Integration
 
 Ghostty works seamlessly with:
 - Starship prompt (auto-loaded in bashrc)
 - Zoxide directory jumping (z command)
+- Eza modern directory listings
+- Fzf fuzzy searching & Ripgrep text search
+- Tree directory visualizations
 - Custom aliases from bashrc
