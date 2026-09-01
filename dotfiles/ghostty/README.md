@@ -1,77 +1,87 @@
 # Ghostty Terminal Configuration
 
-Terminal emulator setup with custom keybindings, integrated with Starship prompt, Eza, Zoxide, Fzf, Ripgrep, and Tree.
+Custom terminal setup integrated with modern CLI tools, shell prompt, and system utilities.
+
+---
 
 ## Features
 
-- Custom keybindings: Vim-style navigation
-- Starship integration: Modern prompt display
-- Zoxide support: Smart directory jumping
-- CLI Tools: Colorized listing (eza), interactive fuzzy search (fzf), fast search (ripgrep), and directory structure viewing (tree)
-- Fastfetch display: System info on new tab
+**Custom Keybindings** – Vim-style navigation  
+**Starship Integration** – Modern shell prompt  
+**Zoxide Support** – Smart directory jumping  
+**CLI Enhancements** – Colorized listings, fuzzy search, fast text search  
+**System Info** – Fastfetch on new tabs  
+
+---
 
 ## Keybindings
 
 | Action | Keybind |
 |--------|---------|
-| New Tab | Ctrl+Shift+T |
-| Next Tab | Alt+K |
-| Previous Tab | Alt+J |
-| Close Tab | Alt+Backspace |
+| New Tab | `Ctrl+Shift+T` |
+| Next Tab | `Alt+K` |
+| Previous Tab | `Alt+J` |
+| Close Tab | `Alt+Backspace` |
+
+---
+
+## Installed Tools
+
+All these tools are already installed and integrated:
+
+| Tool | Purpose |
+|------|---------|
+| **eza** | Modern `ls` replacement with colors & icons |
+| **fzf** | Fuzzy finder for interactive file/history search |
+| **ripgrep (rg)** | Lightning-fast text search |
+| **zoxide** | Smart directory navigation (`z` command) |
+| **tree** | Directory structure visualization |
+| **starship** | Modern shell prompt |
+| **fastfetch** | System info display |
+
+---
 
 ## Configuration Files
 
-- config.jsonc - Ghostty terminal config
-- fastfetch.jsonc - System info display
-- _bashrc - Shell configuration with aliases
+```
+~/.config/ghostty/config      # Terminal config
+~/.config/fastfetch/config    # System info display
+~/.bashrc                     # Shell aliases & settings
+```
 
-## Setup
+---
 
-### Ghostty Config
+## Quick Commands
 
-cp config.jsonc ~/.config/ghostty/config
+| Alias | Command |
+|-------|---------|
+| `update` | `paru -Syyu` |
+| `ff` | `fastfetch` |
+| `i3` | Start i3 |
+| `gnome` | Start GNOME |
 
-### Bash Config
+**Directory Navigation:**
+```bash
+z <directory>     # Jump to directory (zoxide)
+ls -la            # Modern listing (eza)
+tree -L 2         # View directory tree
+```
 
-cp _bashrc ~/.bashrc
-source ~/.bashrc
+**Searching:**
+```bash
+rg "pattern"      # Fast text search
+fzf               # Interactive file finder
+```
 
-### Dependencies
-
-- ghostty
-- starship
-- zoxide
-- eza
-- fzf
-- ripgrep
-- tree
-- fastfetch
-- paru
-
-## Usage
-
-# Open new tab
-Ctrl+Shift+T
-
-# Navigate tabs (vim-style)
-Alt+K (next)
-Alt+J (previous)
-
-# Close tab
-Alt+Backspace
-
-# Quick commands
-update      # paru -Syyu
-ff          # fastfetch display
-i3          # start i3
-gnome       # start GNOME
+---
 
 ## Integration
 
-Ghostty works seamlessly with:
-- Starship prompt (auto-loaded in bashrc)
-- Zoxide directory jumping (z command)
-- Eza modern directory listings
-- Fzf fuzzy searching & Ripgrep text search
-- Tree directory visualizations
-- Custom aliases from bashrc
+Works seamlessly with:
+- Starship (auto-loaded in bashrc)
+- Zoxide (`z` command for smart jumping)
+- Eza (modern, colorized listings)
+- Fzf (fuzzy search & history)
+- Ripgrep (lightning-fast text search)
+- Tree (directory visualization)
+- Fastfetch (system info on startup)
