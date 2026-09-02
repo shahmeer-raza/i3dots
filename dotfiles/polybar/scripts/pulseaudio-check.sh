@@ -1,23 +1,20 @@
 #!/bin/bash
-
-primary="%{F#e49a6b}"
-reset="%{F-}"
-
+COLOR="#e49a6b"
 # Get mute status
 mute_status=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
 
 # Check if muted
 if [[ "$mute_status" == "yes" ]]; then
-    echo "${primary}${reset}"
+    echo "%{F$COLOR}%{F-}"
     exit 0
 fi
 
 # Get volume
 volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+%' | head -1)
 
-# Check if Bluetooth
-if pactl list sinks | grep -A 10 "Name: @DEFAULT_SINK@" | grep -q "bluez"; then
-    echo "${primary}${reset} ${volume}"
+# Check if Bluetooth (alternative methods)
+if pactl list sinks | grep -i "bluetooth\|bluez\|a2dp" > /dev/null; then
+    echo "%{F$COLOR}%{F-} ${volume}"
 else
-    echo "${primary}${reset} ${volume}"
+    echo "%{F$COLOR} %{F-}${volume}"
 fi
