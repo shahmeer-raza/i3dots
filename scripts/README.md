@@ -13,8 +13,10 @@ Personal `.bashrc` setup for Arch Linux with i3 and GNOME.
 
 | Alias | Command |
 |-------|---------|
-| `ls` | `ls --color=auto` |
+| `ls` | `eza --icons=auto` |
+| `ll` | `eza -l --icons=auto` |
 | `grep` | `grep --color=auto` |
+| `bc` | `bluetoothctl` |
 | `i3` | `startx` (start i3) |
 | `update` | `paru -Syyu` (update system) |
 | `gnome` | `sudo systemctl start gdm` (start GNOME) |
