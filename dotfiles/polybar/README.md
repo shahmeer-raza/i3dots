@@ -89,8 +89,9 @@ polybar mybar
 
 ## Troubleshooting
 
+### Icons Not Showing
+
 If icons don't show, ensure fonts are installed:
-If the volume module taking too long to refresh, change the interval to 0.1 or 0.5.
 
 ```bash
 fc-list | grep -i "font awesome\|jetbrains"
@@ -101,3 +102,13 @@ Restart polybar if needed:
 ```bash
 killall polybar && polybar mybar &
 ```
+
+### Volume Module Slow to Refresh
+
+If the volume module is taking too long to refresh, adjust the interval in your custom pulseaudio script:
+
+```bash
+interval = 0.5    # or 0.1 for faster updates
+```
+
+Lower values = faster refresh but higher CPU usage. Default is `1` for balanced performance.
