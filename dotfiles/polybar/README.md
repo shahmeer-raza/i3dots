@@ -90,6 +90,7 @@ polybar mybar
 ## Troubleshooting
 
 If icons don't show, ensure fonts are installed:
+If the volume module taking too long to refresh, change the interval to 0.1 or 0.5.
 
 ```bash
 fc-list | grep -i "font awesome\|jetbrains"
