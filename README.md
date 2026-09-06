@@ -2,6 +2,8 @@
 
 My personal dotfiles and configuration for i3 window manager on Arch Linux.
 
+![i3dots Setup](./assets/setup.png)
+
 ---
 
 ## Quick Start
@@ -66,7 +68,6 @@ Make polybar scripts executable:
 ```bash
 chmod +x ~/.config/polybar/scripts/*.sh
 ```
-
 
 ---
 
