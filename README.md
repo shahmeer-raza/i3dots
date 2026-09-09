@@ -2,7 +2,7 @@
 
 My personal dotfiles and configuration for i3 window manager on Arch Linux.
 
-![i3dots Setup](./assets/setup.png)
+![i3dots Setup](./assets/Setup_ScreenShot.png)
 
 ---
 
