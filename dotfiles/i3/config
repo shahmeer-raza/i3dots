@@ -171,7 +171,7 @@ exec --no-startup-id xset s off -dpms
 
 bindsym $mod+z exec --no-startup-id brave -app=https://chess.com/play
 
-bindsym $mod+p exec scrot
+bindsym $mod+p exec scrot -s
 
 #bindsym $mod+m exec mpv
 
