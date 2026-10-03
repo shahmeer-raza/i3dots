@@ -112,7 +112,7 @@ bindsym $mod+space exec rofi -show drun
 
 bindsym $mod+l exec --no-startup-id bash -c "i3-msg workspace  && sleep 0.3 && betterlockscreen -l blur"
 
-exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/i3dots/assets/wallpaper.jpg
 
 exec_always --no-startup-id killall -q polybar; polybar mybar &
 
